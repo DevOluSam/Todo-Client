@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins'
+}
+.create_form input {
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+
+.create_form button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.task {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 10px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox .icon {
+  margin-right: 5px;
+  font-size: 15px;
+
+}
+.edit_delete{
+  display: flex;
+  gap: 10px;
+}
+.icon {
+  cursor: pointer;
+}
+.line_through {
+  text-decoration: line-through;
+}
+.create_form_edit input{
+  margin-top: 10px;
+  width: 228px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+.create_form_edit button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-bottom: 1px solid #D6D6D6;
+  
+  
+}
+.logo-img {
+  width: 150px;
+  padding-top: 5px;
+}
+.header-list-item {
+  
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-list-item li {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer{
+  margin-top: 20px;
+  display: flex;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  padding-top: 25%;
+}
+.footer-list-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-list-item li {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.media {
+  display: flex;
+  gap: 15px;
+}
+
+.copyright {
+  display: block;
+  
+  text-align: center;
+}
+.copyright p {
+  display: block;
+  margin: 0 auto;
+  width: 1071px;
+  height: 0px;
+  left: calc(50% - 1071px/2 - 0.5px);
+  top: 122px;
+  border: 1px solid #D6D6D6;
+
+}
+.copyright h2{
+  font-size: 20px;
+  color: #b8a5a5bb;
+}
