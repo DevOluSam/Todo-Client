@@ -1,6 +1,6 @@
 import Home from './Home'
 import Footer from './Footer'
-import './App.css'
+// import './App.css'
 import './index.css';
 
 import Header from './Header'
