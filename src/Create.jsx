@@ -4,7 +4,7 @@ import axios from 'axios'
 function Create() {
   const [task, setTask] = useState('')
   const handleAdd = async() => {
-    const response = await axios.post('http://localhost:3001/add', {
+    const response = await axios.post('https://todo-server-b3gs.onrender.com/add', {
       task: task
     })
     location.reload()

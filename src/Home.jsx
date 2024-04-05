@@ -10,7 +10,7 @@ function Home() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('http://localhost:3001/todos');
+            const response = await axios.get('https://todo-server-b3gs.onrender.com/todos');
             setTodos(response.data);
         };
         fetchData();
@@ -23,7 +23,7 @@ function Home() {
     };
 
       const handleCompleted = async (id) => {
-      const response = await axios.put("http://localhost:3001/completed/"+id);
+      const response = await axios.put("https://todo-server-b3gs.onrender.com/completed/"+id);
       if (response.status === 200) {
         setTodos(prevTodos => prevTodos.map(todo => {
           if (todo._id === id) {
@@ -35,7 +35,7 @@ function Home() {
     }
 
     const handleUpdate = async (id) => {
-        const response = await axios.put("http://localhost:3001/update/"+id, {
+        const response = await axios.put("https://todo-server-b3gs.onrender.com/update/"+id, {
             task: editTask
         });
         if (response.status === 200) {
@@ -51,7 +51,7 @@ function Home() {
     };
 
     const handleDelete = async (id) => {
-        const response = await axios.delete(`http://localhost:3001/delete/${id}`);
+        const response = await axios.delete(`https://todo-server-b3gs.onrender.com/delete/${id}`);
         if (response.status === 200) {
             setTodos(prevTodos => prevTodos.filter(todo => todo._id !== id));
         }
